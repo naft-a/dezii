@@ -67,6 +67,38 @@
         -ms-touch-action: none;
         overflow: hidden;
       }
+      body {
+        margin: 0;
+        /* This is a font-stack that tries to use the system-default sans-serifs first */
+        font-family: Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        line-height: 1.5;
+        min-height: 100vh;
+        background-color: #005eb8;
+        -webkit-font-smoothing: antialiased;
+      }
+     .top {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 60px;
+            background-color: #005eb8;
+        }
+        
+        .bottom {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 100px;
+            background: grey;
+        }
+        
+        .middle {
+          overflow: auto;
+          height: 300px;
+          margin-top: 60px;
+          padding-bottom: 100px
+        }
+
    </style>
    <body>
       <div class="container">
